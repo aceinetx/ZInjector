@@ -1,3 +1,8 @@
 #pragma once
+#include <string>
 
-void ImGui_Draw();
+namespace ZInjector {
+	std::string GetLocalDir();
+	void Init();
+	void ImGui_Draw();
+}
