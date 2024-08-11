@@ -8,6 +8,7 @@ wchar_t* GetWC(const char* c)
 	size_t outSize;
 	wchar_t* wc = new wchar_t[cSize];
 	mbstowcs_s(&outSize, wc, cSize, c, cSize-1);
+	delete wc;
 
 	return wc;
 }
